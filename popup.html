@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>京东竞品分析助手</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>京东竞品分析助手</h1>
+      <p class="desc">点击“刷新数据”可读取当前标签页商品信息。</p>
+
+      <section class="card">
+        <div class="row">
+          <span class="label">商品标题</span>
+          <span id="title" class="value">-</span>
+        </div>
+        <div class="row">
+          <span class="label">当前价格</span>
+          <span id="price" class="value">-</span>
+        </div>
+        <div class="row">
+          <span class="label">商品评分</span>
+          <span id="rating" class="value">-</span>
+        </div>
+        <div class="row">
+          <span class="label">评论总数</span>
+          <span id="comments" class="value">-</span>
+        </div>
+      </section>
+
+      <p id="status" class="status">准备就绪</p>
+      <button id="refreshBtn" class="btn">刷新数据</button>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
